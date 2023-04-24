@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<!--
+	Almabrouk Ben-Omran
+	60104920
+	Project -->
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Contact Us </title>
+	<link rel="stylesheet" type="text/css" href="../CSS/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/commonstyles.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/contactus.css">
+	<script type="text/javascript" src="../JS/contactus.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<img src="../Images/logo.png" alt="Fuel Logo" />
+
+		<nav>
+
+			<ul>
+
+				<li> <a href="index.html" target="_blank"> Home </a> </li>
+				<li> <a href="products.html" target="_blank"> Products </a> </li>
+				<li> <a href="#" target="_blank"> Contact Us </a> </li>
+				<li> <a href="subscribe.html" target="_blank"> Subscribe </a> </li>
+
+			</ul>
+		
+		</nav>
+
+	</header>
+
+	<h1 id="title1"> Primary Contact Information &#128234;: </h1>
+
+	<section id="primary_contact">
+
+		<ul>
+
+			<h2> Head Office &#127980;: </h2>
+
+			<li> <address> &#128205; Head Office Address | <strong> Al Rayyan 14302 Doha, Qatar &#128071;&#127995;: </strong> </address> </li>
+
+			<li> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.326082195404!2d51.47960785022553!3d25.29324622019567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45db1cbbb62bcb%3A0x89244b99a71cb111!2sAl%20Rayyan%20Rd%2C%20Doha!5e0!3m2!1sen!2sqa!4v1678365874498!5m2!1sen!2sqa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe> </li>
+
+			<li> &#128197; Operational Days | <strong> Sunday - Thursday </strong> </li>
+
+			<li> &#128338; Hours | <strong> 8:00 AM - 9:00 PM </strong> </li>
+
+			<li> &#128222; Phone Number | <strong> +974 6628 6999 </strong> </li>
+
+			<li> &#128231; E-Mail | <strong> <a href="mailto:office@fuelsc.com"> office@fuelsc.com </a> </strong> </li>
+
+		</ul>
+
+		<ul>
+
+			<h2 id="customer_service"> Customer Service Department &#128187;: </h2>
+
+			<li> &#128197; Operational Days | <strong> Sunday - Friday </strong> </li>
+
+			<li> &#128338; Hours | <strong> 10:00 AM - 8:00 PM | 3:00 PM - 10:00 PM (Friday) </strong> </li>
+
+			<li> &#128222; Phone Number | <strong> +974 4490 1528 </strong> </li>
+
+			<li> &#128231; E-Mail | <strong> <a href="mailto:customer@fuelsc.com"> customer@fuelsc.com </a> </strong> </li>
+
+		</ul>
+
+	</section>
+
+	<h1 id="title2"> Further Inquiries ? Contact Us Directly &#128172;: </h1>
+
+	<form action="https://sit.cna-qatar.edu.qa/processform.php" method="POST" onsubmit="return validate_form()">
+		
+		<fieldset>
+
+			<legend> We Are Happy To Assist You &#128578; </legend>
+
+			<div>
+
+				<label for="name" id="label_name"> Full Name*: </label>
+
+				<input type="text" name="name" id="name" placeholder="first and last name" onblur="validate_fullname()">
+
+			</div>
+
+			<div>
+
+				<label for="message" id="label_message"> Ask Us Anything*: </label>
+
+				<textarea name="message" placeholder="Write inquiry here" id="message" rows="4" onblur="validate_message()"></textarea>
+
+			</div>
+
+			<div>
+
+				<label for="phone" id="label_userinfo"> Phone Number*: </label>
+
+				<input type="tel" name="user_info" id="user_info" value="+974" onblur="validate_field_format()">
+
+			</div>
+
+			<p> Preferred Contact Method*: </p>
+
+			<span id="contact_errormsg"></span>
+
+			<section id="radio">
+
+				<label for="contact_phone_call"> Phone 
+
+					<input type="radio" id="contact_phone_call" name="contact_method" value="contact_phone_call" onblur="validate_contact_method()" onclick="validate_user_info()"> 
+
+				</label>
+
+				<label for="contact_email"> E-Mail 
+
+					<input type="radio" id="contact_email" name="contact_method" value="contact_email" onblur="validate_contact_method()" onclick="validate_user_info()">  
+
+				</label>
+
+				<label for="SMS"> SMS 
+
+					<input type="radio" id="SMS" name="contact_method" value="SMS" onblur="validate_contact_method()" onclick="validate_user_info()">
+
+				</label> 
+
+				<label for="whatsapp"> WhatsApp 
+
+					<input type="radio" name="contact_method" id="whatsapp" value="whatsapp" onblur="validate_contact_method()" onclick="validate_user_info()"> 
+
+				</label>
+
+			</section>
+			
+			<div id="center_buttons">
+
+				<input type="submit"  value="Submit">
+
+				<input type="reset"  value="Reset">
+
+			</div>
+
+		</fieldset>
+
+	</form>
+
+	<footer>
+
+		<section id="locations">
+
+			<h1> Locations &#128205;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> <address> Duhail | <a href="https://goo.gl/maps/HPzUV7bnjKKqy5ZH7" target="_blank"> &#128204; Abdulla Bin Khalifa Stadium, Doha, Qatar </a> </address> </li>
+				<li> <address> AlWakrah | <a href="https://goo.gl/maps/rAwNEbYaFReqvogc8" target="_blank"> &#128204; Al Wakra Main St, Doha, Qatar </a> </address> </li>
+				<li> <address> Lusail | <a href="https://goo.gl/maps/CKgMdUNFTkkSp1E96" target="_blank"> &#128204; Lusail Commercial Boulevard, Doha, Qatar </a> </address> </li>
+				<li> <address> Muaither | <a href="https://goo.gl/maps/iDw8iHhvXur6QSnZ9" target="_blank"> &#128204; Furousiya St, Doha, Qatar </a> </address> </li>
+			
+			</ul>
+		
+		</section>
+
+		<section id="accounts">
+			
+			<h1> Social Media Accounts &#129505;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> Facebook <a href="https://www.facebook.com/fuel.qa" target="_blank"> <img src="../Images/facebook.png" alt="Facebook Logo"> </a> </li>
+				<li> Instagram <a href="https://www.instagram.com/fuel.qa/" target="_blank"> <img src="../Images/instagram.png" alt="Instagram Logo"> </a> </li>
+			
+			</ul>
+
+
+		</section>
+
+		<section id="hours">
+
+			<h1> Working Hours &#128338;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> Duhail | 9:00 AM - 3:00 AM </li>
+				<li> AlWakrah | 8:00 AM - 2:00 AM </li>
+				<li> Lusail | 8:00 AM - 2:00 AM </li>
+				<li> Muaither | 8:30 AM - 3:30 AM </li>
+			
+			</ul>
+		
+		</section>
+
+		<section id="contacts">
+
+			<h1> Contact Information &#128234;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> &#128222; Duhail: +974 4001 4000  </li>
+				<li> &#128222; AlWakrah: +974 4493 9455</li>
+				<li> &#128222; Lusail: +974 4145 8600 </li>
+				<li> &#128222; Muaither: +974 4498 0287 </li>
+				<li> &#128222; Main Office: +974 4498 0287 </li>
+
+				<br>
+
+				<br>
+
+				<li> &#128231; Inquiries: <a href="mailto:hello@fuelsc.com"> hello@fuelsc.com </a> </li>
+				<li> &#128231; Events: <a href="mailto:karen@fuelsc.com"> karen@fuelsc.com </a> </li>
+				<li> &#128231; Roaster: <a href="mailto:sandy@fuelsc.com"> sandy@fuelsc.com </a> </li>
+
+			</ul>
+			
+		</section>
+
+		<section id="delivery">
+
+			<h1> Available on &#128663;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> Snoonu  <img src="../Images/snoonu.png" alt="Snoonu Logo"> </li>
+				<li> Talabat <img src="../Images/talabat.png" alt="Talabat Logo"> </li>
+			
+			</ul>
+
+		</section>
+
+	</footer>
+
+</body>
+
+</html>

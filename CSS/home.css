@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+
+/* Almabrouk Ben-Omran
+   60104920
+   Project
+*/
+
+#left p {
+
+   padding-left:0.5em;
+   line-height:1.6;
+}
+
+#left h1, #right h1 {
+
+   text-align:center;
+}
+
+#right #local ul {
+
+   display:grid;
+   grid-template-columns:repeat(2, 1fr);
+   gap:1.5em;
+}
+
+#right #exports ul {
+
+   display:grid;
+   grid-template-columns:repeat(3, 1fr);
+   gap:1.5em;
+}
+
+#right nav ul li {
+
+   text-align:center;
+}
+
+#right nav ul li img {
+
+   width:100%;
+   object-fit:contain;
+   aspect-ratio:3/4;
+}
+
+#exports ul li img {
+
+   width:100%;
+   object-fit: contain;
+   height:15em;
+}
+
+#exports ul li {
+
+   width:102%;
+}
+
+#exports ul h2 li img {
+
+   margin-top:1em;
+}
+
+#peets {
+
+   padding-right:1.5em;
+}
+
+#nescafe {
+
+   margin-top:0.5em;
+}
+
+#left blockquote {
+
+   padding-left:0.5em;
+   line-height:1.6;
+}
+
+

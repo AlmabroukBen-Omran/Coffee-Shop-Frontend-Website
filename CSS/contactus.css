@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+
+/* Almabrouk Ben-Omran
+   60104920
+   Project
+*/
+
+body {
+
+   min-width:1300px;
+   max-width:1500px;
+   display:grid;
+   grid-template-columns:auto auto;
+   grid-template-areas:"logo logo"
+                       "title1 title2"
+                       "contact form"
+                       "footer footer"
+}
+
+header {
+
+   grid-area:logo;
+}
+
+#title1 {
+
+   grid-area:title1;
+}
+
+#title2 {
+
+   grid-area:title2;
+}
+
+#primary_contact {
+
+   grid-area:contact;
+   padding-left:0.7em;
+   margin-bottom:1.5em;
+}
+
+#title1 {
+
+   text-align:center;
+   margin-top:3em;
+   font-size:1.8em;
+}
+
+#title2 {
+
+   text-align:center;
+   font-size:1.8em;
+   margin-top:3em;
+   margin-bottom:2em;
+}
+
+#primary_contact h2 {
+
+   font-size:1.5em;
+   margin-bottom:1.5em;
+}
+
+#customer_service {
+
+   margin-top:2em;
+}  
+
+#primary_contact ul li {
+
+   line-height:1.5;
+}
+
+iframe {
+
+   margin-top:1em;
+   outline:1px solid black;
+   width:99%;
+}
+
+form {
+
+   grid-area:form;
+   margin-left:0.3em;
+   margin-top:4em;
+}
+
+legend {
+
+   text-align:center;
+   margin-bottom:1em;
+   font-size:1.3em;
+   background-color:#A0522D;
+   padding:0.5em 0.5em;
+   border-radius:1em;
+   color:black;
+}
+
+input {
+
+   margin-right:0.5em;
+}
+
+textarea, #name, #user_info {
+
+   padding:0.3em 0.5em;
+}
+
+textarea {
+
+   width:98%;
+}
+
+
+p {
+
+   padding-left:0.3em;
+   margin-bottom:1em;
+   font-size:1.2em;
+   margin-top:3em;
+
+}
+
+label {
+
+   padding-left:0.5em;
+   margin-top:0.5em;
+}
+
+fieldset {
+
+   background-color:#F4A460;
+   border-radius:1em;
+   margin-right:0.5em;
+   height:30em;
+}
+
+div {
+
+   display:grid;
+   grid-template-columns:1fr 2fr;
+   gap:5%;
+   margin-bottom:2%;
+   margin-top:2em;
+}
+
+#label_email {
+
+   width:140%;
+}
+
+#email {
+
+   margin-left:5em;
+}
+
+#radio{
+
+   display:grid;
+   grid-template-columns:repeat(4,1fr);
+   margin-bottom:2.2em;
+   margin-top:1em;
+}
+
+#center_buttons {
+
+   text-align:center;
+   display:block;
+   margin:auto;
+   margin-top:7em;
+   margin-left:2em;
+}
+
+input[type = "submit"], input[type = "reset"] {
+
+   width:15%;
+   background-color:#DCDCDC;
+   padding:0.5em;
+}
+
+footer {
+
+   grid-area:footer;
+}
+
+#primary_contact a {
+
+   text-decoration:none;
+   color:black;
+}
+
+.placeholder::-webkit-input-placeholder {
+
+    color:red;
+    font-size:14px;
+ }
+
+ #contact_errormsg {
+
+   margin-left:0.5em;
+   display:none;
+   
+ }

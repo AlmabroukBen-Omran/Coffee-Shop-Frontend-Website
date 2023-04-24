@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<!--
+	Almabrouk Ben-Omran
+	60104920
+	Project -->
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Subscribe </title>
+	<link rel="stylesheet" type="text/css" href="../CSS/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/commonstyles.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/subscribe.css">
+	<script type="text/javascript" src="../JS/subscribe.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<img src="../Images/logo.png" alt="Fuel Logo" />
+
+		<nav>
+
+			<ul>
+
+				<li> <a href="index.html" target="_blank"> Home </a> </li>
+				<li> <a href="products.html" target="_blank"> Products </a> </li>
+				<li> <a href="contactus.html" target="_blank"> Contact Us </a> </li>
+				<li> <a href="#" target="_blank"> Subscribe </a> </li>
+
+			</ul>
+		
+		</nav>
+
+	</header>
+
+	<h1 id="title"> Register Today and Become a Member of our Coffee Loving Community &#129309;&#127995; ! </h1>
+
+	<form action="https://sit.cna-qatar.edu.qa/processform.php" method="POST" onsubmit="return validate_form()">
+
+		<fieldset id="registration">
+
+			<legend> Registration Information &#128221; </legend>
+
+			<label for="name"> Full Name*: </label>
+
+			<input type="text" name="name" placeholder="first and last name" id="name" onblur="validate_fullname()">
+
+			<span id="fullname_errormsg"></span>
+
+			<label for="user"> Username*: </label>
+
+			<input type="text" name="user" id="user" onblur="validate_username()">
+
+			<span id="username_errormsg"></span>
+
+			<label for="pass"> Password*: </label>
+
+			<input type="password" name="pass" id="pass" onblur="validate_password()">
+
+			<span id="password_errormsg"></span>
+
+			<label for="show_pass"> Show password </label>
+
+			<input type="checkbox" name="show_pass" id="show_pass" onclick="validate_checkbox()">
+
+			<br>
+
+			<label for="confirm_pass"> Confirm Password*: </label>
+
+			<input type="password" name="confirm_pass" id="confirm_pass" onblur="validate_password_confirmation()">
+
+			<span id="confirm_password_errormsg"></span>
+
+			<label for="email"> E-Mail*: </label>
+
+			<input type="email" name="email" placeholder="example@xx.edu.qa" id="email" onblur="validate_email()">
+
+			<span id="email_errormsg"></span>
+
+			<label for="confirm_email"> Confirm E-Mail*: </label>
+
+			<input type="email" name="confirm_email" id="confirm_email" onblur="validate_email_confirmation()">
+
+			<span id="confirm_email_errormsg"></span>
+
+			<label for="phone"> Phone Number*: </label>
+
+			<input type="tel" name="phone" value="+974" id="phone" onblur="validate_phone()">
+
+			<span id="phone_errormsg"></span>
+
+			<label for="dob"> Date Of Birth*: </label>
+
+			<input type="date" name="dob" id="dob" onblur="validate_dob()">
+
+			<span id="dob_errormsg"></span>
+
+			<label for="age"> Age*: </label>
+
+			<input type="number" name="age" id="age" onblur="validate_age()">
+
+			<span id="age_errormsg"></span>
+
+		</fieldset>
+
+		<fieldset id="shipping">
+
+			<legend> Shipping Address &#128230; </legend>
+
+			<label for="building"> Building Number*: </label>
+
+			<input type="number" name="building" id="building" onblur="validate_building_number()">
+
+			<span id="building_errormsg"></span>
+
+			<label for="street"> Street Name*: </label>
+
+			<input type="text" name="street" id="street" onblur="validate_street_name()">
+
+			<span id="street_errormsg"></span>
+
+			<label for="city"> City/Municipality: </label>
+
+			<select name="city" id="city">
+
+				<option value="doha" selected> Doha </option>
+
+				<option value="alkhor"> Al Khor </option>
+
+				<option value="alwakrah"> Al Wakrah </option>
+
+				<option value="lusail"> Lusail </option>
+
+				<option value="alrayyan"> Al Rayyan </option>
+
+				<option value="alkhraitiyat"> Al Khraitiyat </option>
+
+				<option value="alsaad"> Al Saad </option>
+
+				<option value="umm_salal_mohammad"> Umm Salal Mohammad </option>
+
+				<option value="madinat_alshamal"> Madinat Al Shamal </option>
+
+				<option value="dukhan"> Dukhan </option>
+
+				<option value="alshahaniyah"> Al Shahaniyah </option>
+
+				<option value="mesaieed"> Mesaieed </option>
+
+				<option value="alwukair"> Al Wukair </option>
+
+				<option value="alruwais"> Al Ruwais </option>
+
+				<option value="fuwairit"> Fuwairit </option>
+
+				<option value="umm_bab"> Umm Bab </option>
+
+				<option value="alghuwairiyah"> Al Ghuwairiyah </option>
+
+				<option value="aljumailiyah"> Al Jumailiyah </option>
+
+			</select>
+
+			<span id="city_errormsg"></span>
+
+			<label for="newsletter" id="label_newsletter"> Subscribe to our newsletter </label>
+
+			<input type="checkbox" name="newsletter" id="newsletter">
+
+			<span id="_errormsg"></span>
+
+		</fieldset>
+
+		<div>
+
+			<input type="submit" name="submit_form1" value="Submit">
+
+			<input type="reset" name="reset_form1" value="Reset">
+
+		</div>
+	
+	</form>
+
+	<footer>
+
+		<section id="locations">
+
+			<h1> Locations &#128205;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> <address> Duhail | <a href="https://goo.gl/maps/HPzUV7bnjKKqy5ZH7" target="_blank"> &#128204; Abdulla Bin Khalifa Stadium, Doha, Qatar </a> </address> </li>
+				<li> <address> AlWakrah | <a href="https://goo.gl/maps/rAwNEbYaFReqvogc8" target="_blank"> &#128204; Al Wakra Main St, Doha, Qatar </a> </address> </li>
+				<li> <address> Lusail | <a href="https://goo.gl/maps/CKgMdUNFTkkSp1E96" target="_blank"> &#128204; Lusail Commercial Boulevard, Doha, Qatar </a> </address> </li>
+				<li> <address> Muaither | <a href="https://goo.gl/maps/iDw8iHhvXur6QSnZ9" target="_blank"> &#128204; Furousiya St, Doha, Qatar </a> </address> </li>
+			
+			</ul>
+		
+		</section>
+
+		<section id="accounts">
+			
+			<h1> Social Media Accounts &#129505;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> Facebook <a href="https://www.facebook.com/fuel.qa" target="_blank"> <img src="../Images/facebook.png" alt="Facebook Logo"> </a> </li>
+				<li> Instagram <a href="https://www.instagram.com/fuel.qa/" target="_blank"> <img src="../Images/instagram.png" alt="Instagram Logo"> </a> </li>
+			
+			</ul>
+
+
+		</section>
+
+		<section id="hours">
+
+			<h1> Working Hours &#128338;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> Duhail | 9:00 AM - 3:00 AM </li>
+				<li> AlWakrah | 8:00 AM - 2:00 AM </li>
+				<li> Lusail | 8:00 AM - 2:00 AM </li>
+				<li> Muaither | 8:30 AM - 3:30 AM </li>
+			
+			</ul>
+		
+		</section>
+
+		<section id="contacts">
+
+			<h1> Contact Information &#128234;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> &#128222; Duhail: +974 4001 4000  </li>
+				<li> &#128222; AlWakrah: +974 4493 9455</li>
+				<li> &#128222; Lusail: +974 4145 8600 </li>
+				<li> &#128222; Muaither: +974 4498 0287 </li>
+				<li> &#128222; Main Office: +974 4498 0287 </li>
+
+				<br>
+
+				<br>
+
+				<li> &#128231; Inquiries: <a href="mailto:hello@fuelsc.com"> hello@fuelsc.com </a> </li>
+				<li> &#128231; Events: <a href="mailto:karen@fuelsc.com"> karen@fuelsc.com </a> </li>
+				<li> &#128231; Roaster: <a href="mailto:sandy@fuelsc.com"> sandy@fuelsc.com </a> </li>
+
+			</ul>
+			
+		</section>
+
+		<section id="delivery">
+
+			<h1> Available on &#128663;: </h1>
+
+			<br>
+
+			<ul>
+
+				<li> Snoonu  <img src="../Images/snoonu.png" alt="Snoonu Logo"> </li>
+				<li> Talabat <img src="../Images/talabat.png" alt="Talabat Logo"> </li>
+			
+			</ul>
+
+		</section>
+
+	</footer>
+
+</body>
+
+</html>
